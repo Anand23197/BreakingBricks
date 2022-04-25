@@ -129,9 +129,9 @@
                        if(brick.isVisible){
                        if(x > brick.x && x < (brick.x + brickW) && y > brick.y && y < (brick.y + brickH)){
                         bricks[b][i].isVisible = false;       
-                        checkYouWon();
                         score++;
                         dy = -dy;
+                        checkYouWon();
                        }
                        }
                    }
@@ -148,7 +148,7 @@
          }
     
          function checkYouWon(){
-            if(score === 23){
+            if(score === 24){
                  alert('you won the game');
                  clearInterval(interval);
                  interval = null;
